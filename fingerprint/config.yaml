@@ -1,0 +1,18 @@
+# Hyperparameters for fingerprint/config.py's AnalysisConfig. Any field left
+# out here keeps its dataclass default (see config.py) -- you only need to
+# list the ones you want to change. Loaded via load_config().
+
+pca:
+  n_components: 10   # dimensions kept for clustering (also nested PC1/PC2 used for the 2D plot)
+  standardize: true   # z-score features before fitting PCA
+  random_state: 0
+
+umap:
+  n_components: 10   # dimensions kept for clustering (a separate 2D UMAP is always fit for plotting)
+  n_neighbors: 15     # local (small) vs global (large) structure tradeoff
+  min_dist: 0.1        # how tightly points are allowed to pack in the embedding
+  random_state: 0
+
+hdbscan:
+  min_cluster_size: 5   # smallest group of points reported as a cluster
+  min_samples: 15         # how strict the density/core-point requirement is (higher = more noise)

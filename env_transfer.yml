@@ -1,0 +1,24 @@
+name: transfer
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pandas  
+  - jupyter
+  - pyodbc
+  - matplotlib
+  - networkx
+  - scikit-learn
+  - pip
+  - pip:
+    - sqlglot == 27.29.0
+    - graphviz == 0.21
+    - pyvis
+    - pyperclip
+    - markdown-it-py[linkify,plugins] # installed via: pip install "markdown-it-py[linkify,plugins]"
+    - umap-learn
+    - hdbscan
+    - pyyaml
+    - svglib
+    - reportlab
