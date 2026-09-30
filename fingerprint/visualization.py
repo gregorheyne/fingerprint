@@ -6,7 +6,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.figure import Figure
 
-from .fingerprint import raw_threshold
+from .fingerprint_builder import raw_threshold
 
 
 # ---------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 from pathlib import Path
 
 from fingerprint.config import load_config
-from fingerprint.fingerprint import build_fingerprint
+from fingerprint.fingerprint_builder import build_fingerprint
 from fingerprint.fingerprint_analysis import run_fingerprint_analysis
 from fingerprint.synthetic_data import generate_synthetic_trades
 
