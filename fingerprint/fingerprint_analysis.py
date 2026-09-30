@@ -6,15 +6,15 @@ import pandas as pd
 from sklearn.metrics import silhouette_score
 from sklearn.tree import export_text
 
-from .config import AnalysisConfig, HDBSCANConfig
-from .embedding import pca_reduce, umap_reduce, pca_loadings, top_pca_loadings
-from .clustering import hdbscan_cluster, cluster_silhouette
-from .cluster_explainability import (
+from fingerprint.config import AnalysisConfig, HDBSCANConfig
+from fingerprint.embedding import pca_reduce, umap_reduce, pca_loadings, top_pca_loadings
+from fingerprint.clustering import hdbscan_cluster, cluster_silhouette
+from fingerprint.cluster_explainability import (
     cluster_feature_profile, profile_feature_spread, cluster_anova_importance,
     cluster_surrogate_importance, cluster_cohesion_profile, cluster_exemplars,
     cluster_vs_rest_importance,
 )
-from .visualization import plot_cluster_results, plot_decision_tree_with_importances
+from fingerprint.visualization import plot_cluster_results, plot_decision_tree_with_importances
 
 
 # ---------------------------------------------------------------------------

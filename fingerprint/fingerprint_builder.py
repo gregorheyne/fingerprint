@@ -3,8 +3,8 @@ from typing import NamedTuple
 import numpy as np
 import pandas as pd
 
-from .category_composition import build_composition_features
-from .behavior_features import (
+from fingerprint.category_composition import build_composition_features
+from fingerprint.behavior_features import (
     build_directionality_features, build_concentration_features,
     build_complexity_features, build_intensity_features, build_temporal_features,
 )

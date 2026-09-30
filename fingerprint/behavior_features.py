@@ -18,7 +18,7 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-from .category_composition import aggregate, to_shares
+from fingerprint.category_composition import aggregate, to_shares
 
 
 # ---------------------------------------------------------------------------
